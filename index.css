@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+body {
+	margin:auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: #ffffff;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+/* Navigation */
+nav {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: #FFCC33;
+	padding: 10px;
+}
+
+
+ul {
+	text-align:center;
+}
+
+
+a {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+nav li {
+	padding-right: 24px;
+	list-style: none;
+	display: inline-block;
+}
+
+
+.workText h2 {
+	width: 300px;
+	height: 100%;
+	padding: 50px 0 50px 0;
+	font-size: 28px;
+}
+
+.workText p {
+	width: 200px;
+	padding: 24px 0 24px 0;
+}
+
+
+h1 {
+	font-size: 40px;
+	color: #FFCC33;
+	margin-bottom:0px;
+	text-align: center;
+}
+
+
+h3 {
+	font-size: 42px;
+	font-weight: 20;
+}
+
+
+h4 {
+	color: #000000;
+	font-size: 32px;
+	background-color: #FFCC33;
+}
+
+
+
+footer ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+
+/* Custom animation: Spinning objects clockwise */
+@keyframes rotate {
+	from {transform: rotate(0); }
+	to {transform: rotate(1turn); }
+}
+
+
+.flowers {
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-duration: 12s;
+	position: absolute;
+}
+
+
+.flowers img {
+	width: 600px;
+}
+
+
+.hero {
+	padding-top: 64px;
+	justify-content: center;
+	background-color: #F4EAEE;
+}
+
+
+.woman {
+	position: relative;
+	width: 600px;
+}
+
+
+.block {
+	width: 100%;
+	height: 40px;
+}
+
+
+.container {	
+	justify-content: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+}
+
+
+.card {
+	width: 33.3%;
+	background-size: cover;
+	text-align: center;
+	height: 333px;
+}
+
+
+
+#workone {
+	background-image:url(img/p-girlfran.jpg);
+}
+
+#worktwo {
+	background-image:url(img/p-campusclimate2.png);
+}
+
+#workthree {
+	background-image:url(img/p-summerlands3.jpg);
+}
+
+#workfour {
+	background-image:url(img/p-anthill.jpg);
+}
+
+#workfive {
+	background-image:url(img/p-wood-poster-octa.jpg);
+}
+
+#worksix {
+	background-image:url(img/p-tablet-alex2.jpg);
+}
+
+
+.card p, .card h2 {
+	display: none;
+}
+
+
+.card:hover p, .card:hover h2 {
+	display: inline-block;
+	background-color:  rgba(255,255,255,0.7);
+}
+
+
+.info {
+	text-align: center;
+	font-size: 16px;
+	color: #333333;
+}
+
+.info p {
+	padding: 0 40px 0 40px;
+}
+
+
+/*
+----------
+ABOUT PAGE
+----------
+*/
+
+.a-container {
+	display: flex;
+}
+
+.a-container img {
+	width: 340px;
+}
+
+.a-container p {
+	font-size: 16px;
+	flex: 1;
+}
+
+.a-content {
+	margin-left: 24px;
+}
+
+.a-content ul {
+	text-align: left;
+}
+
+.a-content li {
+	list-style: square;
+
+}
+
+
+/*
+----------
+CONTACT PAGE
+----------
+*/
+
+.email {
+	text-align:center;
+}
+
+.email a {
+	color: #5F5F5F;
+	font-size: 24px;
+}
+
+
+
+
+/* Mobile View */
+@media (min-width: 100px) and (max-width: 600px) {
+	
+	body {
+		padding: 0px;
+	}
+	
+	.hero {
+		padding-top: 20px;
+	}
+	
+	
+	.flowers img {
+		width: 350px;
+	}
+	
+	.woman {
+		position: relative;
+		width: 100%;
+	}
+	
+	h1 {
+		font-size: 36px;
+	}
+	
+	.container {
+		flex-direction: column;
+	}
+	
+	
+	.card {
+		width: 80%;
+		padding: 20px;
+		border-radius: 0;
+		height: 400px;
+	}
+	
+	.block {
+		display: none;
+	}
+	
+}
+
+
+
+
+
+
+
